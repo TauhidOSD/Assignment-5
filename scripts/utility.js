@@ -17,6 +17,7 @@ let count=-1;
 let totalSeat=41;
 let totalPrice=-550;
 
+
 for (const btn of allBtn){
   btn.addEventListener("click",function(e){
     
@@ -34,10 +35,19 @@ for (const btn of allBtn){
     document.getElementById("total-Price").innerText=totalPrice;
     
   });
+  
  }
 // function setInnerText(id,value){
 //   document.getElementById(id).innerText=value;
 // }
+
+const coupon=document.getElementById("coupon");
+if(coupon===NEW15){
+ discount=coupon-82.;
+ console.log(discount);
+}else{
+  console.log("please give the correct coupon");
+}
 
 
 
